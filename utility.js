@@ -8,7 +8,22 @@ function addElement(addElement){
     elementRemove.classList.remove('hidden');
 }
 
-function playGround(){
-    hideElement('mainScreen');
-    addElement('playGround');
+
+function setBackgroundColorById(elementId){
+    const element = document.getElementById(elementId);
+    element.classList.add('bg-orange-400');
 }
+
+
+function getARandomAlphabet(){
+    const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+    const alphabets = alphabet.split('');
+    const randomNumber = Math.round(Math.random(alphabets) * 25);
+    // const index  =
+
+    const strings = alphabets[randomNumber];
+    return strings;
+}
+
+
+
