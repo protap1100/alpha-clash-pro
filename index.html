@@ -80,23 +80,24 @@
                         <button class="btn rounded-3xl bg-[#894189] text-white px-4">
                            <span> Life</span>
                            <img src="images/Group 23.png" alt="">
+                           <span id="life-score">5</span>
                           </button>
                       </div>
                     <div>
                         <button class="btn rounded-3xl bg-[#360490]  text-white px-4">
                             <span>Score</span>
                             <img src="images/monetization_on.png" alt="">
-                                <span>1</span>
+                                <span id="current-score">0</span>
                         </button>
                     </div>
                </div>
             </div>
         </section>
 
-        <section class="score font-poppins text-white   justify-center items-center min-h-screen hidden">
+        <section id="final-score" class="score font-poppins text-white  flex justify-center items-center min-h-screen hidden">
             <div class="score-bg p-10 flex flex-col justify-center items-center gap-4  rounded">
-                    <h1 class="text-5xl font-bold">Score: <span>14</span></h1>
-                    <button class="btn bg-white text-black border-none">Play Again</button>
+                    <h1 class="text-5xl font-bold">Score: <span id="final-result">14</span></h1>
+                    <button onclick="playGround();" class="btn bg-white text-black border-none">Play Again</button>
                     <h1>Practice Will Make You Pro</h1>
             </div>
         </section>
